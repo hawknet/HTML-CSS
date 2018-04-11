@@ -1,9 +1,10 @@
 body {
-font-family: Verdana, Arial, Helvetica, sans-serif;
-font-size: 12px;
-width: 720px;
-margin: 0 auto;
-
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100vw;
+    height: 100vh; /* высота секции равна высоте области просмотра */
+    margin: 0 auto;
+    padding: 0;
 }
 
 .logo {
@@ -58,9 +59,10 @@ footer {
 
 main {
     display: flex;
-    height: 600px;
+    height: 80%;
     text-align: center; 
     background: rgba(143, 109, 177, 0.781);
+    margin: 0 auto;
 }
 
 article {
@@ -68,26 +70,31 @@ article {
     width: 50%;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 article section:nth-child(1) {
     box-sizing: border-box;
     border: 5px solid;
     border-color: white;
     height: 25%;
-    padding-top: 15%;
 }
 article section:nth-child(2) {
     box-sizing: border-box;
     border: 5px solid;
     border-color: white;
     height: 35%;
-    padding-top: 25%;
 }
 article section:nth-child(3) {
     box-sizing: border-box;
     border: 5px solid;
     border-color: white;
     height: 40%;
-    padding-top: 25%;
 }
 
 .side-1 {
@@ -100,7 +107,6 @@ article section:nth-child(3) {
     border: 5px solid;
     border-color: white;
     height: 35%;
-    padding-top: 35%;
 }
 
 .side-1 section:nth-child(2) {
@@ -108,7 +114,6 @@ article section:nth-child(3) {
     border: 5px solid;
     border-color: white;
     height: 65%;
-    padding-top: 75%;
 }
 
 
@@ -121,19 +126,19 @@ article section:nth-child(3) {
     border: 5px solid;
     border-color: white;
     height: 20%;
-    padding-top: 20%;
+
 }
 .side-2 section:nth-child(2) {
     box-sizing: border-box;
     border: 5px solid;
     border-color: white;
     height: 50%;
-    padding-top: 50%;
+
 }
 .side-2 section:nth-child(3) {
     box-sizing: border-box;
     border: 5px solid;
     border-color: white;
     height: 30%;
-    padding-top: 30%;
+    /* padding-top: 30%; */
 }
